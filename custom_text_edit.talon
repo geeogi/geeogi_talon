@@ -1,5 +1,5 @@
-break: key(space)
-chip: key(backspace)
+chip: 
+	key(backspace)
 clear: 
-    key(cmd-a)
-    key(backspace)
+	key(cmd-a)
+	key(backspace)
