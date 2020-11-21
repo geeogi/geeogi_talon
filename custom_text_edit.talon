@@ -3,3 +3,5 @@ chip:
 clear: 
 	key(cmd-a)
 	key(backspace)
+tick:
+	insert('`')

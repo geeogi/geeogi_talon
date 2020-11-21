@@ -1,11 +1,13 @@
-os: mac
-and app.bundle: com.apple.Terminal
+app.name: Terminal
+-
 
 vim:
 	insert('vim')
-execute:
+colon <user.letter>:
     	key(escape)
 	insert(':')
+	insert(user.letter)
+	key(enter)
 explore:
 	key(escape)
 	insert(':Explore')
@@ -19,10 +21,6 @@ buffer <number>:
 	insert(':buffer')
 	insert(number)
 	key(enter)
-write:
-	key(escape)
-	insert(':w')
-	key(enter)
 quit:
 	key(escape)
 	insert(':q')
@@ -30,6 +28,25 @@ quit:
 vim grep:
 	key(escape)
 	insert(':vim /')
+vim grep git:
+	key(escape)
+	insert(':vim // `git ls-files`')
+	key(left)
+	key(left)
+	key(left)
+	key(left)
+	key(left)
+	key(left)
+	key(left)
+	key(left)
+	key(left)
+	key(left)
+	key(left)
+	key(left)
+	key(left)
+	key(left)
+	key(left)
+	key(left)
 see next:
 	key(escape)
 	insert(':cnext')
