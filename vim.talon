@@ -1,13 +1,11 @@
 app.name: Terminal
 -
 
-vim:
-	insert('vim')
-colon <user.letter>:
-    	key(escape)
+neo vim:
+	insert('nvim')
+execute:
+  key(escape)
 	insert(':')
-	insert(user.letter)
-	key(enter)
 explore:
 	key(escape)
 	insert(':Explore')
@@ -20,6 +18,12 @@ buffer <number>:
 	key(escape)
 	insert(':buffer')
 	insert(number)
+	key(enter)
+visual:
+	insert("v")
+save:
+	key(escape)
+	insert(':w')
 	key(enter)
 quit:
 	key(escape)
