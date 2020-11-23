@@ -1,8 +1,8 @@
 app.name: Terminal
 -
 
-neo vim:
-	insert('nvim')
+(vim | nim | neo vim):
+	insert('nvim ')
 execute:
   key(escape)
 	insert(':')
